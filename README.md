@@ -1,7 +1,5 @@
 # PokeCounter
 
-## Sommaire
-
 - [Auteurs](#auteurs)
 - [Projet](#projet)
   - [Grille de notation](#grille-de-notation)
@@ -47,4 +45,3 @@ Réalisation d'un outil à destination des shasseurs
 ## Pour aller plus loin
 
 - Possibilité de choisir les images des pokémons affichés en fonction de la version du jeu désiré
-- Affichage de la forme shiny grâce à un bouton
