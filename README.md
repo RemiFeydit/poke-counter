@@ -33,7 +33,7 @@ Rigueur de contribution |  4 |
 Conception fonctionnelle | 4  | ✅
 Configuration repo | 2 | ✅
 Développement de composants | 7 | 
-Styles | 4 |
+Styles | 4 | ✅
 Tests unitaires | 6 | 
 Navigation client | 3 | ✅
 Chargement dynamique | 2 | 
