@@ -1,10 +1,11 @@
 import { useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import PokemonCard from "./PokemonCard";
-import { Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 import Header from "./Header";
 import SearchInput from "./SearchInput";
 import RadioButtonGen from "./RadioButtonGen";
+import { Capitalize } from "../utils/utils";
 
 const Home = () => {
   const [value, setValue] = useState("");
@@ -58,9 +59,7 @@ const Home = () => {
               <PokemonCard
                 key={pokemonId}
                 id={pokemonId}
-                name={pokemon.name.replace(/\w\S*/g, (w) =>
-                  w.replace(/^\w/, (c) => c.toUpperCase())
-                )}
+                name={Capitalize(pokemon.name)}
                 image={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonId}.png`}
                 size={4}
               />
