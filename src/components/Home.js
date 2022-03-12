@@ -10,7 +10,7 @@ import { Capitalize } from "../utils/utils";
 const Home = () => {
   const [value, setValue] = useState("");
   const [pokemons, setPokemons] = useState([]);
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [, setSearchParams] = useSearchParams();
   const [gen, setGen] = useState("");
 
   const onChangeGen = (event) => {

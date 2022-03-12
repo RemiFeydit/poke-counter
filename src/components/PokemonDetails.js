@@ -1,5 +1,5 @@
-import { Grid, Typography, Box, LinearProgress, Button } from "@mui/material";
-import { useParams, Link } from "react-router-dom";
+import { Grid, Typography } from "@mui/material";
+import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import PokemonCardImageDetails from "./PokemonDetails/PokemonCardImageDetails";
 import PokemonInfos from "./PokemonDetails/PokemonInfos";
