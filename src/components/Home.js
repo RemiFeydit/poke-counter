@@ -16,7 +16,7 @@ const Home = () => {
     setGen(event.target.value);
   };
 
-  async function fetchPokemon(generation) {
+  async function fetchPokemons(generation) {
     try {
       const response = await fetch(
         `https://pokeapi.co/api/v2/pokemon${generation}`
@@ -34,7 +34,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-    fetchPokemon(gen);
+    fetchPokemons(gen);
   }, [gen]);
 
   return (
@@ -61,8 +61,8 @@ const Home = () => {
                 name={pokemon.name.replace(/\w\S*/g, (w) =>
                   w.replace(/^\w/, (c) => c.toUpperCase())
                 )}
-                image={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonId}.png`}
-                size={2}
+                image={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonId}.png`}
+                size={4}
               />
             );
           })}

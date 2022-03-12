@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const PokemonCard = (props) => {
   return (
-    <Grid item xs={props.size}>
+    <Grid item xs={props.size} md={props.size / 2}>
       <Link style={{ textDecoration: "none" }} to={`/pokemon/${props.id}`}>
         <Card>
           <CardContent>
