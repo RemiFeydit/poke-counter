@@ -1,5 +1,7 @@
-import { Grid } from "@mui/material";
+import React from "react";
+import { Grid, Tabs, Tab, Divider } from "@mui/material";
 import { Link } from "react-router-dom";
+import "./Header.css"
 
 const Header = () => {
   return (
@@ -18,6 +20,12 @@ const Header = () => {
           </Link>
         </Grid>
       </Grid>
+      <Divider variant="middle" />
+      <Tabs value={2} aria-label="nav tabs example">
+        <Tab label="Home" to='/' component={Link} />
+        <Tab label="My favorites" to='/favorites' component={Link} />
+      </Tabs>
+      <Divider variant="middle" />
     </div>
   );
 };
