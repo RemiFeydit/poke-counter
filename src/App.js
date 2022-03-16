@@ -8,15 +8,17 @@ import store from "./store";
 
 function App() {
   return (
-    <BrowserRouter>
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/pokemons/:id" element={<PokemonDetails />} />
-          <Route path="/favorites" element={<FavoriteListStore />} />
-        </Routes>
-      </main>
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/favorites" element={<FavoriteListStore />} />
+            <Route path="/pokemons/:id" element={<PokemonDetails />} />
+          </Routes>
+        </main>
+      </BrowserRouter>
+    </Provider>
   );
 }
 

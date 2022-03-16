@@ -29,11 +29,11 @@ Réalisation d'un outil à destination des shasseurs
 | Rigueur de contribution               | 4      |
 | Conception fonctionnelle              | 4      | ✅  |
 | Configuration repo                    | 2      | ✅  |
-| Développement de composants           | 7      |
+| Développement de composants           | 7      | ✅  |
 | Styles                                | 4      | ✅  |
 | Tests unitaires                       | 6      |
 | Navigation client                     | 3      | ✅  |
-| Chargement dynamique                  | 2      |
+| Chargement dynamique                  | 2      | ✅  |
 | Développement de vues complexes       | 10     |
 | Gestion d'état global et décentralisé | 6      |
 | Communication avec des APIs           | 5      | ✅  |
