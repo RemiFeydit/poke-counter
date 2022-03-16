@@ -1,6 +1,6 @@
 import { useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import PokemonCard from "./PokemonCard";
+import { PokemonCardRedux } from "./PokemonCard";
 import { Grid } from "@mui/material";
 import Header from "./Header";
 import SearchInput from "./SearchInput";
@@ -56,7 +56,7 @@ const Home = () => {
               .replace("https://pokeapi.co/api/v2/pokemon/", "")
               .replace("/", "");
             return (
-              <PokemonCard
+              <PokemonCardRedux
                 key={pokemonId}
                 id={pokemonId}
                 name={Capitalize(pokemon.name)}
